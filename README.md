@@ -14,7 +14,7 @@ MENU:
 
 ## Navigation:
 
-| Key | function |
+| Key | Function |
 | ----------- | ----------- |
 | z | selection button |
 | x | back button |
