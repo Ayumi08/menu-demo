@@ -13,7 +13,7 @@ def menu():
     option = 1
     while True:
         if option == 1:
-            clear()  # clears the last output
+            clear()
             print(white + 'MENU:')
             print(selColor + '-> Start')
             print(white + '   Options')
@@ -98,7 +98,7 @@ def menu_Options():
             clear()
 
 
-def menu_options_Selcolor():
+def menu_options_Selcolor(): # not implemented, but can work ¯\_(ツ)_/¯ 
     clear()
     option = 1
     while True:
@@ -183,7 +183,7 @@ def menu_options_Selcolor():
                 option = 6
 
 
-def write(message, delay=.01):
+def write(message, delay=.01): # not implemented either
     for i in message:
         sys.stdout.write(i)
         sys.stdout.flush()
