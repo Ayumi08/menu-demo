@@ -14,8 +14,9 @@ MENU:
 
 ## Navigation:
 
+| Key | function |
+| ----------- | ----------- |
 | z | selection button |
 | x | back button |
-| ----------- | ----------- |
 | up arrow key | moves selector up |
 | down arrow key | moves selector down |
