@@ -1,10 +1,25 @@
 import os
 import sys
 import time
-from codes import *
+import json
 from readchar import readkey
 
+with open("data.json","r") as file_content:
+   data = json.load(file_content)
 
+blue = data["default settings"]["colors"]["blue"].encode("utf-8").decode("unicode_escape")
+cyan = data["default settings"]["colors"]["cyan"].encode("utf-8").decode("unicode_escape")
+green = data["default settings"]["colors"]["green"].encode("utf-8").decode("unicode_escape")
+magenta = data["default settings"]["colors"]["magenta"].encode("utf-8").decode("unicode_escape")
+red = data["default settings"]["colors"]["red"].encode("utf-8").decode("unicode_escape")
+yellow = data["default settings"]["colors"]["yellow"].encode("utf-8").decode("unicode_escape")
+black = data["default settings"]["colors"]["black"].encode("utf-8").decode("unicode_escape")
+bright_black = data["default settings"]["colors"]["bright_black"].encode("utf-8").decode("unicode_escape")
+white = data["default settings"]["colors"]["white"].encode("utf-8").decode("unicode_escape")
+up = "w"
+down = "s"
+right = "a"
+left = "d"
 selColor = blue
 
 
@@ -54,12 +69,14 @@ def menu():
             if option == 2:
                 menu_Options()
             if option == 3:
+                print(white + "")
+                clear()
                 break
 
 
 def clear():
     time.sleep(0.01)
-    os.system('clear')
+    os.system('cls')
 
 
 def start():
