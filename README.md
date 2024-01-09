@@ -1,6 +1,6 @@
 # menu-demo
 
-This is a demo. It uses packages like `readkey`, `os`, `sys`, and `time`. `codes.py` is the file for storing all the escape codes.
+This is a demo. It uses packages like `readkey`, `os`, `sys`, and `time`. `data.json` is the file for storing all the escape codes.
 
 
 When you run the code, you will first get an output like this:
